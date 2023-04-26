@@ -30,8 +30,8 @@
         <button class="btn btn-secondary">Try It Free</button>
       </nav>
 
-      <div class="header__content | flex flex-columns flex-gap-m">
-          <div class="flow">
+      <div class="flex flex-direction flex-gap-m align-center">
+          <div class="one">
             <h1 class="fs-primary-heading">
               Build The Community Your Fans Will Love
             </h1>
@@ -41,7 +41,7 @@
             <button class="btn btn-primary">Get Started For Free</button>
           </div>
           
-          <div>
+          <div class="two">
             <figure>
               <img class="header__img" src="images/illustration-mockups.svg" alt="mockups" >
             </figure>
@@ -63,7 +63,7 @@
       <!-- about section -->
       <section class="about | flow" id="about">
         
-        <article class="about__card | flex flex-columns-reverse flex-gap-m">
+        <article class="about__card | flex flex-direction flex-column-reverse flex-gap-m align-center">
          
           <div class="flow-s">
             <h2 class="fs-secondary-heading fw-bold">Grow Together</h2>
@@ -72,35 +72,40 @@
             </p>
           </div>
 
-          <figure>
-            <img src="images/illustration-grow-together.svg" alt="">
-          </figure>
-    
+          <div>
+            <figure>
+              <img src="images/illustration-grow-together.svg" alt="">
+            </figure>
+          </div>
+          
         </article>
 
-        <article class="about__card | flex flex-columns-reverse flex-gap-m">
+        <article class="about__card | flex flex-direction flex-row-reverse flex-column-reverse flex-gap-m align-center">
           
           <div class="flow-s">
             <h2 class="fs-secondary-heading fw-bold">Flowing Conversations</h2>
             <p class="fs-card-body">You wouldn't paginate a conversation in real life, so why do it online? Our threads have just-in-time loading for a more natural flow.</p>
           </div>
-          
-          <figure>
-            <img src="images/illustration-flowing-conversation.svg" alt="">
-          </figure>
+          <div>
+            <figure>
+              <img src="images/illustration-flowing-conversation.svg" alt="">
+            </figure>
+          </div>
           
         </article>
         
-        <article class="about__card | flex flex-columns-reverse flex-gap-m">
+        <article class="about__card | flex flex-direction flex-column-reverse flex-gap-m align-center">
           
           <div class="flow-s">
             <h2 class="fs-secondary-heading fw-bold">Your Users</h1>
             <p class="fs-card-body">  It takes no time at all to integrate Huddle with your app's authentication solution. This means, once signed in to your app, your users can start chatting immediately. </p>
           </div>
           
-          <figure>
-            <img src="images/illustration-your-users.svg" alt="">
-          </figure>
+          <div>
+            <figure>
+              <img src="images/illustration-your-users.svg" alt="">
+            </figure>
+          </div>
          
         </article>
 
@@ -110,7 +115,7 @@
       <section class="text-align-center" id="cta">
         
         <article class="cta__card | flow">
-          <h2>Ready To Build Your Community?</h2>
+          <h2 class="fs-700 fw-bold">Ready To Build Your Community?</h2>
           <button class="btn btn-primary btn-big">Get Started For Free</button>
         </article>
 
@@ -121,48 +126,38 @@
   </main>
 
   <!-- footer section -->
-  <footer class="footer">
-    <div class="container flow-s">
+  <footer class="footer fs-300">
+    <div class="container flow">
       <img class="logo logo-footer" src="images/logo-footer.svg" alt="">
-      <div class="flex flex-columns flex-gap-m">
+      <div class="flex flex-direction flex-gap-m even-columns">
 
         <ul class="flow-s">
-          <li class="flex flex-gap-s">
+          <li class="flex flex-gap-s align-start">
             <img src="images/icon-location.svg" alt="">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
           </li>
-          <li class="flex flex-gap-s">
+          <li class="flex flex-gap-s align-center">
             <img src="images/icon-phone.svg" alt="">
           <p>+1-543-123-4567</p>
           </li>
-          <li class="flex flex-gap-s">
+          <li class="flex flex-gap-s align-center">
             <img src="images/icon-email.svg" alt="">
           <a href="mailto:example@huddle.com">example@huddle.com</a>
           </li>
         </ul>
         
-        <ul class="fs-500 flow-s">
-          <li>
-            <a class="nav-item" href="#">About Us</a>
-          </li>
-          <li>
-            <a class="nav-item" href="#">What We Do</a>
-          </li>
-          <li>
-            <a class="nav-item" href="#">FAQ</a>
-          </li>
-          <li>
-            <a class="nav-item" href="#">Career</a>
-          </li>
-          <li>
-            <a class="nav-item" href="#">Blog</a>
-          </li>
-          <li>
-            <a class="nav-item" href="#">Contact Us</a>
-          </li>
-        </ul>
+        <div class="footer__nav">
+          <ul class="fs-500 flow-s" aria-label="Footer" role="list"">
+            <li><a class="nav-item" href="#">About Us</a></li>
+            <li><a class="nav-item" href="#">What We Do</a></li>
+            <li><a class="nav-item" href="#">FAQ</a></li>
+            <li><a class="nav-item" href="#">Career</a></li>
+            <li><a class="nav-item" href="#">Blog</a></li>
+            <li><a class="nav-item" href="#">Contact Us</a></li>
+          </ul>
+        </div>
 
-        <div class="flex flex-columns flex-gap-s align-center">
+        <div class="flex flex-direction flex-column space-between flex-gap-s align-center">
         
           <ul class="social-list flex flex-gap-s horizontal-center">
             <li class="fa-fb"><a href=""></a></li>
@@ -170,12 +165,11 @@
             <li class="fa-ig"><a href=""></a></li>
           </ul>
   
-          <p class="fs-200">&copy; Copyright 2018 Huddle. All rights reserved.</p>
-  
         </div>
-
+        
       </div>
-    
+      
+      <p class="footer__copyright fs-200">&copy; Copyright 2018 Huddle. All rights reserved.</p>
     </div>
   </footer>
 </body>
